@@ -62,17 +62,7 @@ class Car:
 
 class Bike(Car):
     def __init__(self):
-        self.engine = 'Powerful'
-
-    def set_bike(self, engine):
-        pass
-
-    def getAll(self):
-        print("Мотоцикл", self.model, " с двигателем " + str(self.engine) + " может ехать со скоростью", self.speed,
-              "на всех", self.wheels, "колесах!")
-
-
-car1 = Car()
+        self.engine = engine
 car2 = Car()
 car1.set(4, 'Toyota', 90)
 car2.set(4, 'Nissan', 100)
