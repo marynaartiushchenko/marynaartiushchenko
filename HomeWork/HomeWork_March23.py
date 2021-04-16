@@ -61,11 +61,14 @@ class Car:
 
 
 class Bike(Car):
+    def __init__(self):
+        self.engine = 'Powerful'
+
     def set_bike(self, engine):
-        self.engine = engine
+        pass
 
     def getAll(self):
-        print("Мотоцикл", self.model, "с двигателем" + str(self.engine) + "может ехать со скоростью", self.speed,
+        print("Мотоцикл", self.model, " с двигателем " + str(self.engine) + " может ехать со скоростью", self.speed,
               "на всех", self.wheels, "колесах!")
 
 
@@ -77,7 +80,7 @@ car1.getAll()
 car2.getAll()
 bike1 = Bike()
 bike1.set(2, 'Harley Davidson', 200)
-bike1.set_bike('Powerfull')
+bike1.set_bike('Powerful')
 bike1.getAll()
 
 
@@ -103,6 +106,7 @@ class Car7:
 c = Car7()
 c.info()
 
+
 # ============================================
 
 class CarClass:
@@ -114,7 +118,7 @@ class CarClass:
     def about(self):
         print(self.wheels, self.model, self.speed)
 
+
 car1 = CarClass(4, "Volvo", 70)
 car2 = CarClass(4, "Fiat", 75)
 car1.about()
-
